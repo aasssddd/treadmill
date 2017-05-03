@@ -12,7 +12,7 @@
 
 #include <folly/init/Init.h>
 
-#include <gflags/gflags.h>
+#include <google/gflags.h>
 #include <glog/logging.h>
 
 // The path to the workload configuration file
