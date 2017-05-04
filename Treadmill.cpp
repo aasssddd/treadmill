@@ -12,7 +12,7 @@
 
 #include <folly/init/Init.h>
 
-#include <google/gflags.h>
+#include <gflags/gflags.h>
 #include <glog/logging.h>
 
 // The path to the workload configuration file
@@ -125,7 +125,7 @@ namespace treadmill {
 void init(int argc, char* argv[]) {
   // Set the usage information
   std::string usage("Treadmill loadtester");
-  gflags::SetUsageMessage(usage);
+  Google::gflags::SetUsageMessage(usage);
 
   folly::init(&argc, &argv);
 }
